@@ -1,21 +1,20 @@
 require "dice"
 
 describe Dice do
-  it 'allows the user to create an instance of Dice' do
-    dice = Dice.new
-    expect(dice).to be_instance_of Dice
+  it 'dice call to roll' do
+    expect(Dice).to respond_to :roll
   end
-  it 'allows to user use the roll' do
-    dice = Dice.new
-    expect(dice).to respond_to(:roll)
-  end
-  it 'roll is between 1-6' do
-    dice = Dice.new
-    expect(dice.roll).to be_between(1,6)
+  it 'returns a number bewteen 1-6' do
+    expect(Dice.roll).to all(be_between(1,6))
   end
   it 'roll any number of dices' do
-    dice = Dice.new
-    expect(dice.roll()).to be_between(1,6)
+    expect(Dice).to respond_to(:roll).with(1).argument
+  end
+  it "returns the right number" do
+    expect(Dice.roll(7).size).to eq 7 
+  end
+  it "gives the numbers" do
+    expect(Dice.roll(10)).to all(be_between(1,6))
   end
 
 end
