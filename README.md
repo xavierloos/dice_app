@@ -1,21 +1,21 @@
-![](https://placehold.it/1100x200/374c53/FFFFFF/?text=Dice+App)
-# The TDD Process
+# Dice App
+## The TDD Process
 
-## Learning objectives
+### Learning objectives
 - Explain why we do TDD
 - Describe/diagram TDD as a set of steps
 - Apply TDD following the diagram
 
-## Why do we TDD
+### Why do we TDD
 
 There are good reasons to write tests, but why write tests first?
 
-## The steps of TDD
+### The steps of TDD
 
 In teams, describe or diagram the process of TDD.
 Your diagram might include: User story, Writing a test, Green, Red, Refactor, Write code, Feature test
 
-## Apply the process
+### Apply the process
 
 Setup a `dice_app` folder with rspec:
 
@@ -63,7 +63,7 @@ So that I know what my score is after I have rolled several dice
 I want to be able to get my current score
 ```
 
-## Resources
+### Resources
 
 :pill: [Behaviour Driven Development with RSpec](https://github.com/makersacademy/course/blob/master/pills/rspec.md)
 
